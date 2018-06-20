@@ -1707,6 +1707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
@@ -1720,6 +1721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_ENABLE_OBJC_GC = unsupported;
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
@@ -1734,6 +1736,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/MYNetwork.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1760,6 +1763,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
 				COPY_PHASE_STRIP = YES;
 				DSTROOT = /tmp/MYNetwork.dst;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
