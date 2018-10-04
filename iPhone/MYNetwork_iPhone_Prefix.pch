@@ -5,4 +5,14 @@
 #ifdef __OBJC__
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#import "MYDNSService.h"
+#import "TCPEndpoint.h"
+#import "TCPConnection.h"
+#import "TCPListener.h"
+#import "BLIPMessage.h"
+#import "TCPStream.h"
+#import "BLIP_Internal.h"
+#import "TCPWriter.h"
+#import "BLIPRequest.h"
 #endif

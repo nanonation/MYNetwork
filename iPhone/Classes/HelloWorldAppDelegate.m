@@ -65,9 +65,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 	MyViewController *aViewController = [[MyViewController alloc] initWithNibName:@"HelloWorld" bundle:[NSBundle mainBundle]];
 	self.myViewController = aViewController;
 	[aViewController release];
-    
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
-	
+    	
 	// Add the view controller's view as a subview of the window
 	UIView *controllersView = [myViewController view];
 	[window addSubview:controllersView];
