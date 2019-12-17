@@ -46,6 +46,7 @@ static void TCPListenerAcceptCallBack(CFSocketRef socket, CFSocketCallBackType t
     uint16_t _port;
     BOOL _pickAvailablePort;
     BOOL _useIPv6;
+    BOOL _useLoopbackOnly;
     CFSocketRef _ipv4socket;
     CFSocketRef _ipv6socket;
 
@@ -85,6 +86,7 @@ static void TCPListenerAcceptCallBack(CFSocketRef socket, CFSocketCallBackType t
 
 
 @synthesize port=_port, useIPv6=_useIPv6,
+            useLoopbackOnly=_useLoopbackOnly,
             bonjourServiceType=_bonjourServiceType, bonjourServiceOptions=_bonjourServiceOptions,
             bonjourPublished=_bonjourPublished, bonjourError=_bonjourError,
             bonjourService=_netService,
@@ -163,7 +165,10 @@ static CFSocketRef closeSocket( CFSocketRef socket ) {
         addr4.sin_len = sizeof(addr4);
         addr4.sin_family = AF_INET;
         addr4.sin_port = htons(_port);
-        addr4.sin_addr.s_addr = htonl(INADDR_ANY);
+        if (_useLoopbackOnly)
+            addr4.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+        else
+            addr4.sin_addr.s_addr = htonl(INADDR_ANY);
 
         NSError *error;
         _ipv4socket = [self _openProtocol: PF_INET address: (struct sockaddr*)&addr4 error: &error];
@@ -192,7 +197,10 @@ static CFSocketRef closeSocket( CFSocketRef socket ) {
         addr6.sin6_len = sizeof(addr6);
         addr6.sin6_family = AF_INET6;
         addr6.sin6_port = htons(_port);
-        memcpy(&(addr6.sin6_addr), &in6addr_any, sizeof(addr6.sin6_addr));
+        if (_useLoopbackOnly)
+            memcpy(&(addr6.sin6_addr), &in6addr_loopback, sizeof(addr6.sin6_addr));
+        else
+            memcpy(&(addr6.sin6_addr), &in6addr_any, sizeof(addr6.sin6_addr));
         
         NSError *error;
         _ipv6socket = [self _openProtocol: PF_INET6 address: (struct sockaddr*)&addr6 error: &error];

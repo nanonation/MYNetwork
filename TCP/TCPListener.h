@@ -41,6 +41,9 @@
 /** Should the server listen for IPv6 connections (on the same port number)? Defaults to NO. */
 @property BOOL useIPv6;
 
+/** Should the server listen exclusively on the loopback interface (on the same port number)? Defaults to NO. */
+@property BOOL useLoopbackOnly;
+
 /** The port number to listen on.
     If the pickAvailablePort property is enabled, this value may be updated after the server opens
     to reflect the actual port number being used. */
