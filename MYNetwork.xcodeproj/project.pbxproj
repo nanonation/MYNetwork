@@ -910,9 +910,9 @@
 			productReference = 2779052D0DE9E5BC00C6D295 /* BLIPEchoServer */;
 			productType = "com.apple.product-type.tool";
 		};
-		279E8F9D0F9FDD0800608D8D /* Mac Blip Library */ = {
+		279E8F9D0F9FDD0800608D8D /* Mac MYNetwork Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 279E8FCC0F9FDD8900608D8D /* Build configuration list for PBXNativeTarget "Mac Blip Library" */;
+			buildConfigurationList = 279E8FCC0F9FDD8900608D8D /* Build configuration list for PBXNativeTarget "Mac MYNetwork Library" */;
 			buildPhases = (
 				279E8F9A0F9FDD0800608D8D /* Headers */,
 				279E8F9B0F9FDD0800608D8D /* Sources */,
@@ -922,14 +922,14 @@
 			);
 			dependencies = (
 			);
-			name = "Mac Blip Library";
+			name = "Mac MYNetwork Library";
 			productName = Library;
 			productReference = 279E8F9E0F9FDD0800608D8D /* libMYNetwork.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		27F87B161557764300F0A416 /* iOS Blip Library */ = {
+		27F87B161557764300F0A416 /* iOS MYNetwork  Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27F87B211557764300F0A416 /* Build configuration list for PBXNativeTarget "iOS Blip Library" */;
+			buildConfigurationList = 27F87B211557764300F0A416 /* Build configuration list for PBXNativeTarget "iOS MYNetwork  Library" */;
 			buildPhases = (
 				27F87B131557764300F0A416 /* Sources */,
 				27F87B141557764300F0A416 /* Frameworks */,
@@ -939,7 +939,7 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Blip Library";
+			name = "iOS MYNetwork  Library";
 			productName = MYNetwork;
 			productReference = 27F87B171557764300F0A416 /* libMYNetwork.a */;
 			productType = "com.apple.product-type.library.static";
@@ -962,9 +962,9 @@
 			productReference = 27F87B4515577BCA00F0A416 /* BLIP Echo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63A16A0C1F59CE26000E69F1 /* tvOS Blip Library */ = {
+		63A16A0C1F59CE26000E69F1 /* tvOS MYNetwork  Library */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63A16A151F59CE26000E69F1 /* Build configuration list for PBXNativeTarget "tvOS Blip Library" */;
+			buildConfigurationList = 63A16A151F59CE26000E69F1 /* Build configuration list for PBXNativeTarget "tvOS MYNetwork  Library" */;
 			buildPhases = (
 				63A16A091F59CE26000E69F1 /* Sources */,
 				63A16A0A1F59CE26000E69F1 /* Frameworks */,
@@ -974,7 +974,7 @@
 			);
 			dependencies = (
 			);
-			name = "tvOS Blip Library";
+			name = "tvOS MYNetwork  Library";
 			productName = "tvOS Blip Library";
 			productReference = 63A16A0D1F59CE26000E69F1 /* libMYNetwork.a */;
 			productType = "com.apple.product-type.library.static";
@@ -1027,9 +1027,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				279E8F9D0F9FDD0800608D8D /* Mac Blip Library */,
-				27F87B161557764300F0A416 /* iOS Blip Library */,
-				63A16A0C1F59CE26000E69F1 /* tvOS Blip Library */,
+				279E8F9D0F9FDD0800608D8D /* Mac MYNetwork Library */,
+				27F87B161557764300F0A416 /* iOS MYNetwork  Library */,
+				63A16A0C1F59CE26000E69F1 /* tvOS MYNetwork  Library */,
 				8DD76F960486AA7600D96B5E /* Blip SelfTest */,
 				277904250DE91C7900C6D295 /* BLIP Echo Client */,
 				2779050F0DE9E5BC00C6D295 /* BLIP Echo Server */,
@@ -1304,12 +1304,12 @@
 /* Begin PBXTargetDependency section */
 		275E900E1709F3E30008F577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 279E8F9D0F9FDD0800608D8D /* Mac Blip Library */;
+			target = 279E8F9D0F9FDD0800608D8D /* Mac MYNetwork Library */;
 			targetProxy = 275E900D1709F3E30008F577 /* PBXContainerItemProxy */;
 		};
 		275E90101709F3E50008F577 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27F87B161557764300F0A416 /* iOS Blip Library */;
+			target = 27F87B161557764300F0A416 /* iOS MYNetwork  Library */;
 			targetProxy = 275E900F1709F3E50008F577 /* PBXContainerItemProxy */;
 		};
 		275E90121709F3E70008F577 /* PBXTargetDependency */ = {
@@ -1334,17 +1334,17 @@
 		};
 		279E8FD60F9FDDD900608D8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 279E8F9D0F9FDD0800608D8D /* Mac Blip Library */;
+			target = 279E8F9D0F9FDD0800608D8D /* Mac MYNetwork Library */;
 			targetProxy = 279E8FD50F9FDDD900608D8D /* PBXContainerItemProxy */;
 		};
 		279E8FF90F9FDECD00608D8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 279E8F9D0F9FDD0800608D8D /* Mac Blip Library */;
+			target = 279E8F9D0F9FDD0800608D8D /* Mac MYNetwork Library */;
 			targetProxy = 279E8FF80F9FDECD00608D8D /* PBXContainerItemProxy */;
 		};
 		27F87B7215577C4100F0A416 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27F87B161557764300F0A416 /* iOS Blip Library */;
+			target = 27F87B161557764300F0A416 /* iOS MYNetwork  Library */;
 			targetProxy = 27F87B7115577C4100F0A416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1889,7 +1889,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		279E8FCC0F9FDD8900608D8D /* Build configuration list for PBXNativeTarget "Mac Blip Library" */ = {
+		279E8FCC0F9FDD8900608D8D /* Build configuration list for PBXNativeTarget "Mac MYNetwork Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				279E8F9F0F9FDD0900608D8D /* Debug */,
@@ -1898,7 +1898,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27F87B211557764300F0A416 /* Build configuration list for PBXNativeTarget "iOS Blip Library" */ = {
+		27F87B211557764300F0A416 /* Build configuration list for PBXNativeTarget "iOS MYNetwork  Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27F87B221557764300F0A416 /* Debug */,
@@ -1916,7 +1916,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A16A151F59CE26000E69F1 /* Build configuration list for PBXNativeTarget "tvOS Blip Library" */ = {
+		63A16A151F59CE26000E69F1 /* Build configuration list for PBXNativeTarget "tvOS MYNetwork  Library" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63A16A131F59CE26000E69F1 /* Debug */,
