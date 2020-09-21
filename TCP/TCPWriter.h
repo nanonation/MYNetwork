@@ -6,8 +6,6 @@
 //  Copyright 2008 Jens Alfke. All rights reserved.
 //
 
-#import "TCPStream.h"
-
 
 /** Output stream for a TCPConnection. Writes a queue of arbitrary data blobs to the socket. */
 @interface TCPWriter : TCPStream 
